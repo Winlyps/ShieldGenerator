@@ -1,9 +1,13 @@
 name: ShieldGenerator
 version: '1.0-SNAPSHOT'
 main: winlyps.shieldGenerator.ShieldGenerator
-api-version: '1.20'
+api-version: '1.16'
 authors: [ Winlyps ]
 commands:
   shieldgn:
     description: Generates a specified number of custom shields.
     usage: /shieldgn <NumberOfGeneratedShieldsMax36>
+permissions:
+  shieldgenerator.command.shieldgn:
+    description: Allows the player to use the /shieldgn command to generate custom shields.
+    default: op
